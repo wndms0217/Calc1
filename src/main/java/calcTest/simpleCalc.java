@@ -20,6 +20,10 @@ public class simpleCalc {
 		else System.out.println("분모가 0입니다.");
 	}
 	
+	public void inc(int x){
+		result +=x;
+	}
+	
 	public int getResult(){
 		return result;
 	}

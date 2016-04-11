@@ -41,9 +41,18 @@ public class simpleCalcTest {
 		
 		calc.div(100,20);
 		
-		assertEquals(5, calc.getResult());
-
+		assertEquals(5, calc.getResult());	
+	}
+	
+	@Test
+	public void testInc() {
+		simpleCalc calc = new simpleCalc();
 		
+		calc.inc(100);
+		assertEquals(100, calc.getResult());
+
+		calc.inc(200);
+		assertEquals(300, calc.getResult());
 	}
 
 }
