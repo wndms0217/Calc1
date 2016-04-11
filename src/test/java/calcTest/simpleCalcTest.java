@@ -15,5 +15,16 @@ public class simpleCalcTest {
 		assertEquals(30, calc.getResult());
 		
 	}
+	
+	@Test
+	public void testSub() {
+		simpleCalc calc = new simpleCalc();
+		
+		calc.sub(10,20);
+		
+		assertEquals(-10, calc.getResult());
+		
+	}
+	
 
 }
