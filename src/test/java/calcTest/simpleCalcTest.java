@@ -26,5 +26,33 @@ public class simpleCalcTest {
 		
 	}
 	
+	@Test
+	public void testMul() {
+		simpleCalc calc = new simpleCalc();
+		
+		calc.mul(10,20);
+		
+		assertEquals(200, calc.getResult());
+	}
+
+	@Test
+	public void testDiv() {
+		simpleCalc calc = new simpleCalc();
+		
+		calc.div(100,20);
+		
+		assertEquals(5, calc.getResult());	
+	}
+	
+	@Test
+	public void testInc() {
+		simpleCalc calc = new simpleCalc();
+		
+		calc.inc(100);
+		assertEquals(100, calc.getResult());
+
+		calc.inc(200);
+		assertEquals(300, calc.getResult());
+	}
 
 }
