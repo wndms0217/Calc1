@@ -25,6 +25,15 @@ public class simpleCalcTest {
 		assertEquals(-10, calc.getResult());
 		
 	}
-	
+
+	@Test
+	public void testDiv() {
+		simpleCalc calc = new simpleCalc();
+		
+		calc.div(100,20);
+		
+		assertEquals(5, calc.getResult());
+		
+	}
 
 }
